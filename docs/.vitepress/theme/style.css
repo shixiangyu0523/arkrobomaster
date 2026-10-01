@@ -1,0 +1,148 @@
+/* ============================================================
+   ARK 云龙战队 — 自定义样式
+   配色灵感：RoboMaster 红 + 深色科技风
+   ============================================================ */
+
+/* --- CSS 变量覆写 --- */
+:root {
+  /* 主色调：RoboMaster 红 */
+  --vp-c-brand-1: #e74c3c;
+  --vp-c-brand-2: #e95f50;
+  --vp-c-brand-3: #c0392b;
+  --vp-c-brand-soft: rgba(231, 76, 60, 0.14);
+
+  /* 强调色：深蓝科技风 */
+  --vp-c-accent-1: #3498db;
+
+  /* 首页 Hero */
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: linear-gradient(135deg, #e74c3c 0%, #f39c12 50%, #e74c3c 100%);
+
+  --vp-home-hero-image-background-image: linear-gradient(-45deg, #e74c3c 30%, #f39c12 70%);
+  --vp-home-hero-image-filter: blur(44px);
+}
+
+/* Dark mode 调整 */
+.dark {
+  --vp-c-brand-1: #e74c3c;
+  --vp-c-brand-2: #f39c12;
+}
+
+/* --- 首页 hero 图片动画 --- */
+.VPHero .image-bg {
+  animation: pulse 3s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 0.6; }
+  50% { opacity: 0.9; }
+}
+
+/* --- 自定义卡片样式 --- */
+.rm-card {
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin: 1rem 0;
+  transition: all 0.3s ease;
+}
+
+.rm-card:hover {
+  border-color: var(--vp-c-brand-1);
+  box-shadow: 0 4px 16px rgba(231, 76, 60, 0.15);
+  transform: translateY(-2px);
+}
+
+/* --- 战队口号样式 --- */
+.rm-motto {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--vp-c-brand-1);
+  padding: 2rem 0;
+  border-top: 1px solid var(--vp-c-divider);
+  border-bottom: 1px solid var(--vp-c-divider);
+  margin: 2rem 0;
+}
+
+/* --- 资讯列表样式 --- */
+.news-list {
+  list-style: none;
+  padding: 0;
+}
+
+.news-list li {
+  padding: 0.8rem 0;
+  border-bottom: 1px dashed var(--vp-c-divider);
+}
+
+.news-list li a {
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.news-list li .date {
+  color: var(--vp-c-text-3);
+  font-size: 0.85rem;
+  margin-right: 0.5rem;
+}
+
+/* --- 招新按钮 --- */
+.btn-recruit {
+  display: inline-block;
+  background: linear-gradient(135deg, #e74c3c, #f39c12);
+  color: #fff !important;
+  font-weight: 700;
+  padding: 0.8rem 2rem;
+  border-radius: 8px;
+  text-decoration: none !important;
+  transition: transform 0.2s, box-shadow 0.2s;
+  font-size: 1.1rem;
+}
+
+.btn-recruit:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 20px rgba(231, 76, 60, 0.4);
+}
+
+/* --- Timeline 时间线 --- */
+.timeline {
+  position: relative;
+  padding-left: 2rem;
+  margin: 1.5rem 0;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: var(--vp-c-brand-1);
+  border-radius: 2px;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -2rem;
+  top: 0.4rem;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--vp-c-brand-1);
+  border: 2px solid var(--vp-c-bg);
+}
+
+/* --- 响应式 --- */
+@media (max-width: 768px) {
+  .rm-card {
+    padding: 1rem;
+  }
+}
