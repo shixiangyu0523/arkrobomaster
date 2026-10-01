@@ -1,0 +1,15 @@
+{
+  "name": "ark-robomaster",
+  "version": "1.0.0",
+  "description": "徐州工程学院 ARK（云龙）战队 — RoboMaster 备赛资料与赛事资讯站",
+  "type": "module",
+  "scripts": {
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "preview": "vitepress preview docs"
+  },
+  "devDependencies": {
+    "vitepress": "^1.5.0",
+    "vue": "^3.5.0"
+  }
+}
