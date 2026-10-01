@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <!-- ARK Logo -->
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e74c3c"/>
+      <stop offset="100%" style="stop-color:#f39c12"/>
+    </linearGradient>
+  </defs>
+  <!-- Shield shape -->
+  <path d="M64 8 L118 28 L118 68 C118 96 96 118 64 124 C32 118 10 96 10 68 L10 28 Z"
+        fill="url(#g)" stroke="#c0392b" stroke-width="3"/>
+  <!-- ARK text -->
+  <text x="64" y="58" text-anchor="middle" fill="white"
+        font-family="Arial Black, sans-serif" font-size="32" font-weight="bold">ARK</text>
+  <!-- Sub text -->
+  <text x="64" y="82" text-anchor="middle" fill="rgba(255,255,255,0.9)"
+        font-family="Arial, sans-serif" font-size="13">云龙</text>
+  <!-- Gear decor -->
+  <circle cx="64" cy="102" r="4" fill="none" stroke="rgba(255,255,255,0.6)" stroke-width="1.5"/>
+  <circle cx="64" cy="102" r="2" fill="rgba(255,255,255,0.4)"/>
+</svg>
