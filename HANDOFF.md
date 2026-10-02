@@ -155,6 +155,8 @@ Invoke-RestMethod -Uri "https://api.github.com/repos/shixiangyu0523/arkrobomaste
 - **身份**：学生，初创社团，对技术细节不太熟悉
 - **沟通风格**：直接有效，一步到位，别浪费他的时间
 - **投票设计要求**：无后端、不收集个人信息、只做意向粗略统计、不要求强防刷
+- **联系方式（对外展示）**：QQ 247590779 / 3462243578 / 1291471536（三位主要队员）
+- **隐私要求**：网站任何页面不得出现战队自己的 Gitee/GitHub 仓库链接（RM 社区开源项目的外链不受限）
 
 ---
 
@@ -170,6 +172,15 @@ Invoke-RestMethod -Uri "https://api.github.com/repos/shixiangyu0523/arkrobomaste
 | `docs/.vitepress/config.mts` | 导航"招新"改下拉（主页+题库）；favicon 修复 |
 | `docs/public/ark-logo.jpeg` | 替换为方形新 Logo |
 | `docs/public/poster.jpeg` | 替换为竖版新海报 |
+
+### 2026-10-02（第二轮：联系方式与仓库隐私）
+
+| 文件 | 改动 |
+|------|------|
+| `docs/index.md` | 首页"联系我们"：Gitee 链接 → 三位主要队员 QQ（换行排列：247590779 / 3462243578 / 1291471536） |
+| `docs/recruitment/index.md` | 招新 FAQ"怎么联系你们"：Gitee 链接 → 同上 QQ 列表 |
+| `docs/about/index.md` | 战队介绍"联系我们"：Gitee 链接 → 同上 QQ 列表 |
+| `docs/.vitepress/config.mts` | 移除 socialLinks（右上角 GitHub 图标）与 editLink（页底"在 GitHub 上编辑此页"），全站不再对外暴露战队仓库入口 |
 
 ---
 
